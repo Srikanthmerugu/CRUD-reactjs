@@ -14,6 +14,22 @@ This project demonstrates a CRUD application built with React.js and styled with
 - **Read**: View all items in a list format.
 - **Update**: Edit existing items.
 - **Delete**: Remove items from the database.
+Here’s a shorter version for your README file:
+
+---
+
+## CRUD Application with React.js, Bootstrap, and json-server
+
+### Description
+
+This project demonstrates a CRUD application built with React.js and styled with Bootstrap, using `json-server` as a mock backend. The app allows users to create, read, update, and delete data entries.
+
+### Features
+
+- **Create**: Add new items to the database.
+- **Read**: View all items in a list format.
+- **Update**: Edit existing items.
+- **Delete**: Remove items from the database.
 
 ### Setup
 
