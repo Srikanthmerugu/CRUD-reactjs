@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.scrollable-div {
+  height: 80vh; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Animy-container {
+  width: 80%;
+  height: 100vh;
+  background-color: #ff6d6d;
+  border-radius: 8px;
+}
+.flex-container {
+  display: flex;
+  gap: 20px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animy-container {
+  width: 100px; 
+  height: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; 
 }
 
-.App-header {
-  background-color: #282c34;
+.carousel-itemimg img{
+  height: 50vh;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+body {
+  background: #42455a;
+}
+
+section {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+section:nth-child(1) {
+  color: #e0ffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section:nth-child(3) {
+  color: #e0ffff;
+}
+
+section:nth-child(4) {
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section .text-container {
+  display: flex;
+}
+
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  section .text-container {
+    flex-direction: column;
   }
 }
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
