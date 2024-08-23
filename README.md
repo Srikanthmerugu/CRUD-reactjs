@@ -43,7 +43,7 @@ This project demonstrates a CRUD application built with React.js and styled with
 4. **Run json-server**:
 
    ```bash
-   json-server --watch db.json --port 3001
+   json-server --watch db.json --port 5000
    ```
 
 5. **Start React App**:
