@@ -79,4 +79,17 @@ This project demonstrates a CRUD application built with React.js and styled with
 
 ---
 
-===========The End ======
+
+
+===========The End ============ 
+
+
+### Animations 
+In this have Animations alow thier  
+
+### scrolling:
+>>> scrooling animations component name :   <MyComponent />
+
+### Opening 
+>>> openening animations  comonajnt name :  <Gridcss />
+

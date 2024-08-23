@@ -24,10 +24,10 @@ import Read from './crudopp/Read';
 function App() {
   return (
    <div>
-      {/* <MyEditor/> */}
-      {/* <DisplayContent/> */}
-      {/* <MyComponent /> */}
-      {/* <Gridcss /> */}
+      <MyEditor/>
+      <DisplayContent/>
+      <MyComponent />
+      <Gridcss />
       {/* <VoiceRecognition /> */}
 
       {/* Website */}
